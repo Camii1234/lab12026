@@ -139,7 +139,13 @@ Los siguientes endpoints están definidos en los controladores del backend:
 CREATE DATABASE lab12026p;
 ```
 
-3. Configure el usuario y la contraseña de MySQL en `lab12026p/src/main/resources/application.properties` según su instalación local. No comparta ni publique esas credenciales.
+3. Antes de ejecutar Spring Boot, configure la variable de entorno `DB_PASSWORD` con la contraseña de su instalación local de MySQL. No comparta ni publique esa credencial.
+
+En PowerShell, defina la variable únicamente para la terminal actual:
+
+```powershell
+$env:DB_PASSWORD = "tu_contraseña"
+```
 
 La conexión configurada utiliza MySQL en `localhost:3306` y la base de datos `lab12026p`. La propiedad `spring.jpa.hibernate.ddl-auto=update` permite que Hibernate cree o actualice automáticamente las tablas al iniciar Spring Boot.
 
@@ -149,6 +155,7 @@ Desde la carpeta raíz del proyecto, abra PowerShell y ejecute:
 
 ```powershell
 cd .\lab12026p
+$env:DB_PASSWORD = "tu_contraseña"
 .\mvnw.cmd spring-boot:run
 ```
 
