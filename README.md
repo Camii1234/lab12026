@@ -204,3 +204,8 @@ Estas dos operaciones fueron incorporadas adicionalmente para ampliar la gestió
 - El frontend necesita que el backend esté activo para completar las operaciones.
 - Las credenciales de MySQL dependen de cada instalación local.
 - `npm install` debe ejecutarse después de clonar el proyecto para instalar las dependencias del frontend.
+
+## Informe del laboratorio
+
+- [Informe del Laboratorio N.º 1 en PDF](documentacion/Informe_Laboratorio_1_Maria_Camila_Castaneda.pdf)
+- [Versión en Google Docs](https://docs.google.com/document/d/1OKwgzB31T75lAGT260RiVtQ1LIzL5hPB-99HIms4--I/edit?usp=sharing)
